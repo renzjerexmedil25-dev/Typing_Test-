@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="typingtest.css">
+</head>
+<body background="bg.jpeg">
+
+    <div class="container">
+        <h1>TYPING SPEED TEST</h1>
+    
+        <div class="timer-display">
+            <span id="timer">30</span>
+            <span class="unit">seconds</span> 
+            </div>
+        
+        <div class="timer-options" id="timer-options">
+            <button class="time-option selected" data-time="30">30s</button>
+            <button class="time-option" data-time="60">60s</button>
+         </div>
+        
+         <div class="text-display" id="text-display">
+        </div>
+
+        <textarea id="input-field" placeholder="Start typing here..." rows="5" disabled></textarea>
+
+        <button id="start-btn" class="btn">Start</button>
+
+        <div class="results" id="results">
+            <p><strong>WPM:</strong> <span id="wpm">0</span></p>
+            <p><strong>Accuracy:</strong> <span id="accuracy">0</span>%</p>
+        </div>
+    </div>
+    <script src="typingtest.js"></script>
+</body>
+</html>
